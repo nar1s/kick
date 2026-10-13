@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KICK — бутсы и кроссовки</title>
+  <meta name="description" content="KICK — футбольные бутсы, футзалки и кроссовки. для поля, зала и города.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="KICK — на главную">KICK</a>
+
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <a href="#about">О нас</a>
+        <a href="#models">Модели</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a href="tel:+70000000000" class="header__phone">+7 (000) 000-00-00</a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- О НАС -->
+    <section class="hero" id="about">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">О нас</p>
+          <h1 class="hero__title">Своя пара для&nbsp;каждого поля</h1>
+          <p class="hero__lead">От дворовой коробки до любительской лиги. Подбираем бутсы, футзалки и кроссовки под покрытие и стиль игры — и помогаем с размером до покупки.</p>
+          <ul class="about-points">
+            <li><b>Под любое покрытие</b><span>Натуральный и искусственный газон, жёсткий грунт, зал.</span></li>
+            <li><b>Поможем с размером</b><span>Подскажем, как выбрать пару, чтобы не промахнуться.</span></li>
+            <li><b>Для команд</b><span>Берёте от 10 пар — напишите, договоримся о цене.</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <img src="img/hero.svg" alt="Схема футбольного поля" class="hero__img">
+        </div>
+      </div>
+    </section>
+
+    <!-- КАТАЛОГ -->
+    <section class="catalog" id="models">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Модели</h2>
+        </div>
+
+        <div class="grid" id="grid">
+          <!-- карточки создаются из js/products.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="contacts" id="contacts">
+      <div class="container contacts__grid">
+        <div class="contacts__info">
+          <h2 class="section-title">Свяжитесь с нами</h2>
+          <p>Напишите или позвоните — подскажем по моделям, размеру и наличию.</p>
+          <dl class="contacts__list">
+            <dt>Телефон</dt><dd><a href="tel:+70000000000">+7 (000) 000-00-00</a></dd>
+            <dt>Почта</dt><dd><a href="mailto:info@kick.ru">info@kick.ru</a></dd>
+            <dt>Адрес</dt><dd>г. Москва, ул. Примерная, 1</dd>
+            <dt>Часы работы</dt><dd>Пн–Пт 10:00–19:00</dd>
+          </dl>
+        </div>
+
+        <div class="messengers">
+          <a class="messenger messenger--tg" href="https://t.me/kick_shop" target="_blank" rel="noopener">
+            <span class="messenger__name">Telegram</span>
+          </a>
+          <a class="messenger messenger--wa" href="https://wa.me/70000000000" target="_blank" rel="noopener">
+            <span class="messenger__name">WhatsApp</span>
+          </a>
+          <a class="messenger messenger--tel" href="tel:+70000000000">
+            <span class="messenger__name">Позвонить</span>
+            <span class="messenger__hint">+7 (000) 000-00-00</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo logo--small">KICK</span>
+      <span>© 2026 KICK. Бутсы и кроссовки.</span>
+      <a href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
